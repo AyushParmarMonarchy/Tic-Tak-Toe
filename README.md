@@ -26,6 +26,7 @@ This project is designed for **fun, practice, and learning React with game logic
 
 ## 📂 Tech Stack
 
+
 | Technology | Purpose |
 |------------|---------|
 | **React 18+** | Frontend framework |

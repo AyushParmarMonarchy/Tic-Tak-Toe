@@ -22,7 +22,6 @@ export default function Board()
             return;
         }
 
-        // copy current board
         const nextSquare = squares.slice();
 
         // player X move
@@ -96,6 +95,7 @@ export default function Board()
             setComputer(' ');
             }}>
             Reset
+
         </button>
 
         </>
