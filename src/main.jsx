@@ -41,7 +41,7 @@ function Test() {
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* < Board /> */}
+    < Board />
     {/* <App /> */}
     {/* <Ayush /> */}
     {/* <Test />  */}
@@ -58,7 +58,7 @@ createRoot(document.getElementById('sandy')).render(
 
 createRoot(document.getElementById('test')).render(
   <StrictMode >
-    < Practice />
+    {/* < Practice /> */}
 
   </StrictMode>
 )
