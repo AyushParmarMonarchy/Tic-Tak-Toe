@@ -1,13 +1,13 @@
-import { StrictMode } from 'react'
+import { lazy, StrictMode, Suspense} from 'react'
 import { createRoot } from 'react-dom/client'
 import React from 'react';
 // import './index.css'
 import App from './App.jsx'
-import Ayush from './components/Ayush.jsx'
+// import Ayush from './components/Ayush.jsx'
 import Board from './components/TicTak.jsx'
 import Practice from './components/Practice.jsx'
 
-
+const Ayush = lazy(()=>import('./components/Ayush.jsx'));
 
 class Demo extends React.Component {
   render() {
@@ -40,12 +40,12 @@ function Test() {
 }
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  <Suspense fallback= {<>Loading....</> }>
     < Board />
     {/* <App /> */}
-    {/* <Ayush /> */}
+    <Ayush />
     {/* <Test />  */}
-  </StrictMode>
+  </Suspense>
 )
 
 // const Ayush1 = React.createElement('h1',{},'I love Coding');
